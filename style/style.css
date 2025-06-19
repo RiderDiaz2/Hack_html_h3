@@ -1,0 +1,86 @@
+:root {
+        --bg-blue: #93B5C9; 
+        --bg-wine: #AB2849; 
+        --bg-dark-wine: #bb2f4e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+}
+
+    /* Estilos para la barra superior (Header Bar) */
+.header-bar {
+    width: 100%; 
+    height: 120px; 
+    background-color: var(--bg-blue); 
+    padding-left: 26px;
+    margin-bottom: -20px;
+}
+
+    /* Contenedor principal que centra el contenido (ahora es el que envuelve la mayoría de las secciones) */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+    /* Estilos para la sección principal de color rojo */
+.main-red-section {
+    width: 180.4%; 
+    height: 200px; 
+    background-color: var(--bg-dark-wine); 
+    padding-bottom: 50px; 
+    margin-left: -400px;
+    margin-bottom: 20px; 
+    display: block; 
+} 
+
+    /* Contenedor principal para todas las secciones indentadas (las rojas más pequeñas) */
+.indented-sections-container { 
+    padding-left: 0; 
+    padding-right: 0; 
+    margin-bottom: 10px;
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+.indented-section {
+    width: 100%; 
+    height: 70px; 
+    background-color: var(--bg-wine); 
+    padding: 20px; 
+    margin-left: 0; 
+    display: block; 
+}
+
+    /* Estilos para el contenedor de las secciones divididas en dos columnas */
+.indented-two-column-section {
+    display: flex;
+    gap: 15px; 
+    width: 100%; 
+    flex-wrap: wrap; 
+}
+
+    /* Estilos para cada sub-sección dentro de una sección dividida (media columna) */
+.indented-half-section {
+    width: calc(50% - 7.5px); 
+    height: 70px; 
+    background-color:var(--bg-wine);
+    padding: 20px; 
+    display: block; 
+}
+
+    /* Estilos para la sección inferior de color rojo */
+.bottom-red-section {
+    width: 180.4%; 
+    height: 120px; 
+    background-color: var(--bg-wine); 
+    margin-left: -400px;
+    margin-top: 10px; 
+    display: block; 
+}
